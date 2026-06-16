@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Code Portfolio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0d1117; color: #c9d1d9; padding: 20px; }
+        header { text-align: center; padding: 40px 0; border-bottom: 1px solid #30363d; }
+        header h1 { color: #58a6ff; margin-bottom: 10px; }
+        .container { max-width: 1000px; margin: 30px auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background-color: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 20px; transition: 0.3s; }
+        .card:hover { border-color: #58a6ff; transform: translateY(-5px); }
+        .card h3 { color: #58a6ff; margin-bottom: 10px; }
+        .card p { font-size: 14px; color: #8b949e; margin-bottom: 15px; }
+        .btn { display: inline-block; background-color: #21262d; color: #c9d1d9; padding: 8px 16px; border: 1px solid #f0f6fc1a; border-radius: 6px; text-decoration: none; font-size: 14px; }
+        .btn:hover { background-color: #30363d; border-color: #8b949e; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>💻 แฟ้มสะสมผลงานและการแชร์โค้ด</h1>
+        <p>รวบรวมโปรเจกต์พัฒนาซอฟต์แวร์ และ Source Code ของฉัน</p>
+    </header>
+
+    <div class="container">
+        <h2>โปรเจกต์ของฉัน (My Projects)</h2>
+        <br>
+        <div class="grid">
+            <div class="card">
+                <h3>🌐 เว็บไซต์เครื่องคิดเลข (Calculator Web App)</h3>
+                <p>โปรเจกต์คำนวณตัวเลขพื้นฐาน พัฒนาด้วย HTML, CSS และ JavaScript รองรับ Responsive หน้าจอ</p>
+                <a href="https://github.com/YOUR-USERNAME/calculator-repo" target="_blank" class="btn">ดูซอร์สโค้ดบน GitHub</a>
+            </div>
+
+            <div class="card">
+                <h3>📝 แอปบันทึกรายการ (To-Do List App)</h3>
+                <p>แอปพลิเคชันช่วยจำกิจกรรมประจำวัน มีระบบบันทึกข้อมูลลง LocalStorage ของเบราว์เซอร์</p>
+                <a href="https://github.com/YOUR-USERNAME/todo-repo" target="_blank" class="btn">ดูซอร์สโค้ดบน GitHub</a>
+            </div>
+
+            <div class="card">
+                <h3>📊 มินิโปรเจกต์ Python ดึงข้อมูลสภาพอากาศ</h3>
+                <p>สคริปต์ Python สำหรับเชื่อมต่อ API ของ OpenWeatherMap เพื่อแสดงอุณหภูมิปัจจุบัน</p>
+                <a href="https://github.com/YOUR-USERNAME/weather-python" target="_blank" class="btn">ดูซอร์สโค้ดบน GitHub</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
