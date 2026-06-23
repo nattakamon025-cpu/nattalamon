@@ -3,52 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Code Portfolio</title>
+    <title>พอร์ตโฟลิโอแชร์โค้ดของฉัน</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #0d1117; color: #c9d1d9; padding: 20px; }
-        header { text-align: center; padding: 40px 0; border-bottom: 1px solid #30363d; }
-        header h1 { color: #58a6ff; margin-bottom: 10px; }
-        .container { max-width: 1000px; margin: 30px auto; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .card { background-color: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 20px; transition: 0.3s; }
-        .card:hover { border-color: #58a6ff; transform: translateY(-5px); }
-        .card h3 { color: #58a6ff; margin-bottom: 10px; }
-        .card p { font-size: 14px; color: #8b949e; margin-bottom: 15px; }
-        .btn { display: inline-block; background-color: #21262d; color: #c9d1d9; padding: 8px 16px; border: 1px solid #f0f6fc1a; border-radius: 6px; text-decoration: none; font-size: 14px; }
-        .btn:hover { background-color: #30363d; border-color: #8b949e; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        header { background: #24292e; color: #fff; padding: 2rem; text-align: center; }
+        header h1 { margin-bottom: 0.5rem; }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        .about { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .card { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-top: 4px solid #0366d6; }
+        .card h3 { color: #0366d6; margin-bottom: 0.5rem; }
+        .tags { margin: 0.5rem 0; }
+        .tag { background: #e1e4e8; color: #586069; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.3rem; }
+        .btn { display: inline-block; background: #28a745; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; margin-top: 1rem; font-weight: bold; }
+        .btn:hover { background: #218838; }
+        footer { text-align: center; margin-top: 3rem; padding: 1rem; color: #666; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>💻 แฟ้มสะสมผลงานและการแชร์โค้ด</h1>
-        <p>รวบรวมโปรเจกต์พัฒนาซอฟต์แวร์ และ Source Code ของฉัน</p>
+        <h1>💻 My Code Portfolio</h1>
+        <p>ยินดีต้อนรับสู่คลังสะสมซอร์สโค้ดและโปรเจกต์พัฒนาซอฟต์แวร์</p>
     </header>
 
     <div class="container">
-        <h2>โปรเจกต์ของฉัน Nattakamon Thoughphu m.6/11 no.1</h2>
-        <br>
+        <section class="about">
+            <h2>🙋‍♂️ เกี่ยวกับฉัน</h2>
+            <p>สวัสดีครับ/ค่ะ ฉันชื่อ [ชื่อนักเรียน] กำลังศึกษาอยู่ชั้น [ระดับชั้น] มีความสนใจในด้านการเขียนโปรแกรม และการพัฒนาเว็บไซต์ ทักษะที่กำลังศึกษาอยู่ ได้แก่ HTML, CSS, และ Python</p>
+        </section>
+
+        <h2>📂 โปรเจกต์ที่น่าสนใจ (Featured Projects)</h2>
         <div class="grid">
             <div class="card">
-                <h3>🌐 เว็บไซต์เครื่องคิดเลข (Calculator Web App)</h3>
-                <p>โปรเจกต์คำนวณตัวเลขพื้นฐาน พัฒนาด้วย HTML, CSS และ JavaScript รองรับ Responsive หน้าจอ</p>
-                <a href="https://github.com/YOUR-USERNAME/calculator-repo" target="_blank" class="btn">ดูซอร์สโค้ดบน GitHub</a>
+                <h3>Project #1: โปรแกรมคำนวณเกรด</h3>
+                <p>โปรแกรมภาษา Python สำหรับช่วยครูคำนวณเกรดเฉลี่ยรวดเร็ว มีการใช้ระบบรับค่าเงื่อนไข Loop และ List</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">CLI</span>
+                </div>
+                <a href="#" target="_blank" class="btn">👁️ ดูโค้ดบน GitHub</a>
             </div>
 
             <div class="card">
-                <h3>📝 แอปบันทึกรายการ (To-Do List App)</h3>
-                <p>แอปพลิเคชันช่วยจำกิจกรรมประจำวัน มีระบบบันทึกข้อมูลลง LocalStorage ของเบราว์เซอร์</p>
-                <a href="https://github.com/YOUR-USERNAME/todo-repo" target="_blank" class="btn">ดูซอร์สโค้ดบน GitHub</a>
-            </div>
-
-            <div class="card">
-                <h3>📊 มินิโปรเจกต์ Python ดึงข้อมูลสภาพอากาศ</h3>
-                <p>สคริปต์ Python สำหรับเชื่อมต่อ API ของ OpenWeatherMap เพื่อแสดงอุณหภูมิปัจจุบัน</p>
-                <a href="https://github.com/YOUR-USERNAME/weather-python" target="_blank" class="btn">ดูซอร์สโค้ดบน GitHub</a>
+                <h3>Project #2: เว็บไซต์แนะนำสถานที่ท่องเที่ยว</h3>
+                <p>หน้าเว็บโปรโมตจังหวัดบ้านเกิดของตัวเอง ตกแต่งสวยงามและรองรับการแสดงผลทุกหน้าจอ</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Responsive</span>
+                </div>
+                <a href="#" target="_blank" class="btn">👁️ ดูโค้ดบน GitHub</a>
             </div>
         </div>
     </div>
+
+    <footer>
+        <p>© 2026 สร้างด้วย GitHub Pages โดย [ชื่อนักเรียน]</p>
+    </footer>
 
 </body>
 </html>
