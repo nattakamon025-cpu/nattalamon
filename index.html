@@ -3,64 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>พอร์ตโฟลิโอแชร์โค้ดของฉัน</title>
+    <title>ณัฏฐกมล ทองพุ | Code Portfolio</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
-        header { background: #24292e; color: #fff; padding: 2rem; text-align: center; }
-        header h1 { margin-bottom: 0.5rem; }
-        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
-        .about { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 2rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .card { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-top: 4px solid #0366d6; }
-        .card h3 { color: #0366d6; margin-bottom: 0.5rem; }
-        .tags { margin: 0.5rem 0; }
-        .tag { background: #e1e4e8; color: #586069; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.8rem; margin-right: 0.3rem; }
-        .btn { display: inline-block; background: #28a745; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; margin-top: 1rem; font-weight: bold; }
-        .btn:hover { background: #218838; }
-        footer { text-align: center; margin-top: 3rem; padding: 1rem; color: #666; font-size: 0.9rem; }
+        /* สไตล์พื้นฐานและการจัดหน้าจอ */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'ChulaCharas', 'Segoe UI', Tahoma, sans-serif; }
+        body { background-color: #0d1117; color: #c9d1d9; line-height: 1.6; }
+        
+        /* ส่วนหัว (Header) */
+        header { background: linear-gradient(135deg, #1f242c 0%, #161b22 100%); padding: 3rem 1rem; text-align: center; border-bottom: 1px solid #30363d; }
+        header h1 { color: #58a6ff; font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { color: #8b949e; font-size: 1.1rem; }
+
+        /* กล่องเนื้อหาหลัก */
+        .container { max-width: 950px; margin: 2rem auto; padding: 0 1.5rem; }
+        
+        /* ส่วนแนะนำตัว */
+        .about-section { background: #161b22; padding: 2rem; border-radius: 6px; border: 1px solid #30363d; margin-bottom: 2.5rem; }
+        .about-section h2 { color: #58a6ff; margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
+        
+        /* ส่วนแสดงผลงาน (Grid) */
+        .project-title { font-size: 1.5rem; margin-bottom: 1rem; color: #f0f6fc; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        
+        /* การ์ดโปรเจกต์ */
+        .card { background: #161b22; padding: 1.5rem; border-radius: 6px; border: 1px solid #30363d; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; justify-content: space-between; }
+        .card:hover { transform: translateY(-5px); border-color: #58a6ff; }
+        .card h3 { color: #f0f6fc; margin-bottom: 0.5rem; }
+        .card p { color: #8b949e; font-size: 0.95rem; margin-bottom: 1rem; }
+        
+        /* แท็กภาษาคอมพิวเตอร์ */
+        .tags { margin-bottom: 1.5rem; }
+        .tag { background: #21262d; color: #58a6ff; padding: 0.2rem 0.6rem; border-radius: 2rem; font-size: 0.8rem; border: 1px solid #30363d; margin-right: 0.4rem; }
+        
+        /* ปุ่มลิงก์แชร์โค้ด */
+        .btn { display: block; text-align: center; background: #238636; color: #fff; padding: 0.6rem; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.95rem; transition: background 0.2s; }
+        .btn:hover { background: #2ea44f; }
+
+        /* ส่วนท้าย (Footer) */
+        footer { text-align: center; margin-top: 4rem; padding: 2rem; color: #8b949e; font-size: 0.85rem; border-top: 1px solid #30363d; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>💻 ณัฏฐกมล ทองพุ</h1>
-        <p>ยินดีต้อนรับสู่คลังสะสมซอร์สโค้ดและโปรเจกต์พัฒนาซอฟต์แวร์</p>
+        <p>คลังสะสมซอร์สโค้ด และผลงานการพัฒนาซอฟต์แวร์</p>
     </header>
 
     <div class="container">
-        <section class="about">
-            <h2>🙋‍♂️ เกี่ยวกับฉัน</h2>
-            <p>สวัสดีครับ/ค่ะ ฉันชื่อ [ชื่อนักเรียน] กำลังศึกษาอยู่ชั้น [ระดับชั้น] มีความสนใจในด้านการเขียนโปรแกรม และการพัฒนาเว็บไซต์ ทักษะที่กำลังศึกษาอยู่ ได้แก่ HTML, CSS, และ Python</p>
+        <section class="about-section">
+            <h2>👤 เกี่ยวกับฉัน</h2>
+            <p>สวัสดีค่ะ ฉันชื่อ <strong>ณัฏฐกมล ทองพุ</strong> ยินดีต้อนรับเข้าสู่พื้นที่แชร์โค้ดของฉัน ปัจจุบันกำลังศึกษาและพัฒนาทักษะด้านการเขียนโปรแกรม มีความสนใจในการสร้างสรรค์ซอฟต์แวร์และการพัฒนาเว็บไซต์เพื่อแก้ไขปัญหาในชีวิตประจำวัน</p>
         </section>
 
-        <h2>📂 โปรเจกต์ที่น่าสนใจ (Featured Projects)</h2>
+        <h2 class="project-title">📂 คลังโปรเจกต์เด่น (Code Repositories)</h2>
         <div class="grid">
+            
             <div class="card">
-                <h3>Project #1: โปรแกรมคำนวณเกรด</h3>
-                <p>โปรแกรมภาษา Python สำหรับช่วยครูคำนวณเกรดเฉลี่ยรวดเร็ว มีการใช้ระบบรับค่าเงื่อนไข Loop และ List</p>
-                <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">CLI</span>
+                <div>
+                    <h3>🚀 โปรแกรมคำนวณเกรด (Python)</h3>
+                    <p>โปรแกรมคำนวณผลการเรียนอัตโนมัติ รองรับการรับค่าคะแนนดิบ นำมาตัดเกรดด้วยเงื่อนไข If-Else และสรุปผลด้วย Loop</p>
                 </div>
-                <a href="#" target="_blank" class="btn">👁️ ดูโค้ดบน GitHub</a>
+                <div>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Logic</span>
+                    </div>
+                    <a href="#" target="_blank" class="btn">🔗 ดูซอร์สโค้ดบน GitHub</a>
+                </div>
             </div>
 
             <div class="card">
-                <h3>Project #2: เว็บไซต์แนะนำสถานที่ท่องเที่ยว</h3>
-                <p>หน้าเว็บโปรโมตจังหวัดบ้านเกิดของตัวเอง ตกแต่งสวยงามและรองรับการแสดงผลทุกหน้าจอ</p>
-                <div class="tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">Responsive</span>
+                <div>
+                    <h3>🌐 เว็บไซต์แนะนำสถานที่ท่องเที่ยว</h3>
+                    <p>โครงสร้างหน้าเว็บที่เขียนด้วย HTML และตกแต่งให้สวยงามด้วย CSS รองรับการแสดงผลทั้งคอมพิวเตอร์และมือถือ</p>
                 </div>
-                <a href="#" target="_blank" class="btn">👁️ ดูโค้ดบน GitHub</a>
+                <div>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <a href="#" target="_blank" class="btn">🔗 ดูซอร์สโค้ดบน GitHub</a>
+                </div>
             </div>
+
         </div>
     </div>
 
     <footer>
-        <p>© 2026 สร้างด้วย GitHub Pages โดย [ชื่อนักเรียน]</p>
+        <p>© 2026 พัฒนาด้วย GitHub Pages โดย ณัฏฐกมล ทองพุ</p>
     </footer>
 
 </body>
